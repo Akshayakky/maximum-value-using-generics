@@ -20,4 +20,13 @@ public class FindMaximum {
             maximumValue = thirdValue;
         return maximumValue;
     }
+
+    public static String findMaximumString(String firstValue, String secondValue, String thirdValue) {
+        String maximumValue = firstValue;
+        if (secondValue.compareTo(maximumValue) > 0)
+            maximumValue = secondValue;
+        if (thirdValue.compareTo(maximumValue) > 0)
+            maximumValue = thirdValue;
+        return maximumValue;
+    }
 }
