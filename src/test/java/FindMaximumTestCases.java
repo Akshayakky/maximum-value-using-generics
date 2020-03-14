@@ -45,4 +45,26 @@ public class FindMaximumTestCases {
         Float max = findMaximum.findMaximumFloat(1.3f, 2.4f, 3.1f);
         Assert.assertEquals((Float) 3.1f, max);
     }
+
+    //Test Cases For String Values
+    @Test
+    public void givenThreeStrings_WhenMaximumFoundAtPosition1_ThenReturnMaximum() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximum = findMaximum.findMaximumString("3", "2", "1");
+        Assert.assertEquals("3", maximum);
+    }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumFoundAtPosition2_ThenReturnMaximum() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximum = findMaximum.findMaximumString("2", "3", "1");
+        Assert.assertEquals("3", maximum);
+    }
+
+    @Test
+    public void givenThreeStrings_WhenMaximumFoundAtPosition3_ThenReturnMaximum() {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximum = findMaximum.findMaximumString("1", "2", "3");
+        Assert.assertEquals("3", maximum);
+    }
 }
