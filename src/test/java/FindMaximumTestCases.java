@@ -6,21 +6,21 @@ public class FindMaximumTestCases {
     @Test
     public void givenThreeIntegers_WhenMaximumFoundAtPosition1_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Integer max = findMaximum.findMaximumInteger(3, 2, 1);
+        Integer max = findMaximum.findMaximum(3, 2, 1);
         Assert.assertEquals((Integer) 3, max);
     }
 
     @Test
     public void givenThreeIntegers_WhenMaximumFoundAtPosition2_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Integer max = findMaximum.findMaximumInteger(2, 3, 1);
+        Integer max = findMaximum.findMaximum(2, 3, 1);
         Assert.assertEquals((Integer) 3, max);
     }
 
     @Test
     public void givenThreeIntegers_WhenMaximumFoundAtPosition3_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Integer max = findMaximum.findMaximumInteger(1, 2, 3);
+        Integer max = findMaximum.findMaximum(1, 2, 3);
         Assert.assertEquals((Integer) 3, max);
     }
 
@@ -28,21 +28,21 @@ public class FindMaximumTestCases {
     @Test
     public void givenThreeFloats_WhenMaximumFoundAtPosition1_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Float max = findMaximum.findMaximumFloat(3.1f, 2.4f, 1.3f);
+        Float max = findMaximum.findMaximum(3.1f, 2.4f, 1.3f);
         Assert.assertEquals((Float) 3.1f, max);
     }
 
     @Test
     public void givenThreeFloats_WhenMaximumFoundAtPosition2_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Float max = findMaximum.findMaximumFloat(2.4f, 3.1f, 1.3f);
+        Float max = findMaximum.findMaximum(2.4f, 3.1f, 1.3f);
         Assert.assertEquals((Float) 3.1f, max);
     }
 
     @Test
     public void givenThreeFloats_WhenMaximumFoundAtPosition3_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        Float max = findMaximum.findMaximumFloat(1.3f, 2.4f, 3.1f);
+        Float max = findMaximum.findMaximum(1.3f, 2.4f, 3.1f);
         Assert.assertEquals((Float) 3.1f, max);
     }
 
@@ -50,21 +50,21 @@ public class FindMaximumTestCases {
     @Test
     public void givenThreeStrings_WhenMaximumFoundAtPosition1_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        String maximum = findMaximum.findMaximumString("3", "2", "1");
+        String maximum = findMaximum.findMaximum("3", "2", "1");
         Assert.assertEquals("3", maximum);
     }
 
     @Test
     public void givenThreeStrings_WhenMaximumFoundAtPosition2_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        String maximum = findMaximum.findMaximumString("2", "3", "1");
+        String maximum = findMaximum.findMaximum("2", "3", "1");
         Assert.assertEquals("3", maximum);
     }
 
     @Test
     public void givenThreeStrings_WhenMaximumFoundAtPosition3_ThenReturnMaximum() {
         FindMaximum findMaximum = new FindMaximum();
-        String maximum = findMaximum.findMaximumString("1", "2", "3");
+        String maximum = findMaximum.findMaximum("1", "2", "3");
         Assert.assertEquals("3", maximum);
     }
 }
