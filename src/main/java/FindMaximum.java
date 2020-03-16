@@ -24,7 +24,7 @@ public class FindMaximum<U extends Comparable> {
         return maximumValue;
     }
 
-    public <U> void printMax(U maximum){
+    public static <U> void printMax(U maximum){
         System.out.println(maximum);
     }
 
