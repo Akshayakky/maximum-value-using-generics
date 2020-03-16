@@ -10,7 +10,9 @@ public class FindMaximum<U extends Comparable> {
     }
 
     public U testMaximum() {
-        return testMaximum(firstValue, secondValue, thirdValue);
+        U maximum = testMaximum(firstValue, secondValue, thirdValue);
+        printMax(maximum);
+        return maximum;
     }
 
     public static <U extends Comparable> U testMaximum(U firstValue, U secondValue, U thirdValue) {
@@ -20,6 +22,10 @@ public class FindMaximum<U extends Comparable> {
         if (thirdValue.compareTo(maximumValue) > 0)
             maximumValue = thirdValue;
         return maximumValue;
+    }
+
+    public <U> void printMax(U maximum){
+        System.out.println(maximum);
     }
 
     public static void main(String[] args) {
